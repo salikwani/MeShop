@@ -41,7 +41,7 @@ if(!localStorage.getItem('userArray')) {
             var msg = document.createElement('sub');
             msg.innerText = "Password too short!";
             document.querySelector('#password-update > h1').appendChild(msg);
-            password.focus();
+            newPassword.focus();
             setTimeout(()=>{document.querySelector('#password-update > h1').removeChild(msg);},4000);
         } else if(oldPassword.value !== userArray[currUser].password) {
             var msg = document.createElement('sub');
