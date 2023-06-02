@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#header {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 29px;
+    background-color: #000000;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 6rem;
+    color: white;
+}
+a {
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    color: white;
+}
+#header-links {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1.5rem;
+}
+#signup-form {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 36px;
+    color: #000000;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 2rem;
+    margin: 2rem 4rem;
+}
+input, #email, #password {
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+}
+#signup-btn {
+    background-color: #000000;
+    color: #FFFFFF;
+    width: 205px;
+    height: 56px;
+}
+#signup-btn:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px grey;
+}
+sub {
+    font-size: 1rem;
+    color: red;
+}
