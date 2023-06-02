@@ -16,8 +16,8 @@ if(localStorage.getItem('userArray')) {
 
       var options = {
         key: "rzp_test_PV1oQ0oMtgXOsq", // Enter the Key ID generated from the Dashboard
-        amount: orderTotal * 100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
-        currency: "USD",
+        amount: orderTotal * 100 * 80, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+        currency: "INR",
         name: "MyShop Checkout",
         description: "This is your order", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
         theme: {
