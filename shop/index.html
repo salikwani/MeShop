@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MeShop.</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div>MeShop.</div>
+      <div id="header-links">
+          <a href="../cart/index.html">My Cart</a><a href="../profile/index.html">Profile</a>
+      </div>
+    </div>
+
+    <main>
+      <aside>
+        <section>
+          <title>Colors</title>
+          <ul>
+            <li>
+              <input id="red" type="checkbox" name="color" onclick="checkFilter('red')"/>
+              <label for="red">Red</label>
+            </li>
+            <li>
+              <input id="blue" type="checkbox" name="color" onclick="checkFilter('blue')"/>
+              <label for="blue">Blue</label>
+            </li>
+            <li>
+              <input id="black" type="checkbox" name="color" onclick="checkFilter('black')"/>
+              <label for="black">Black</label>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <title>Sizes</title>
+          <ul>
+            <li>
+              <input id="s" type="checkbox" name="color" onclick="checkFilter('s')"/>
+              <label for="s">S</label>
+            </li>
+            <li>
+              <input id="m" type="checkbox" name="color" onclick="checkFilter('m')"/>
+              <label for="m">M</label>
+            </li>
+            <li>
+              <input id="l" type="checkbox" name="color" onclick="checkFilter('l')"/>
+              <label for="l">L</label>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <title>Price Range</title>
+          <ul>
+            <li>
+              <input id="aa" type="checkbox" name="prange" onclick="checkFilter('aa')"/>
+              <label for="aa">$0 to $25</label>
+            </li>
+            <li>
+              <input id="bb" type="checkbox" name="prange" onclick="checkFilter('bb')"/>
+              <label for="bb">$26 to $50</label>
+            </li>
+            <li>
+              <input id="cc" type="checkbox" name="prange" onclick="checkFilter('cc')"/>
+              <label for="cc">$51 onwards</label>
+            </li>
+          </ul>
+        </section>
+      </aside>
+      <main-content>
+        <input type="text" placeholder="Search" id="search"/>
+        <div class="filters">
+          <div class="filter active" id="all-filter" onclick="activeFilter('all-filter')">All</div>
+          <div class="filter" id="men-filter" onclick="activeFilter('men-filter')">Mens</div>
+          <div class="filter" id="women-filter" onclick="activeFilter('women-filter')">Womens</div>
+          <div class="filter" id="electronics-filter" onclick="activeFilter('electronics-filter')">Electronics</div>
+          <div class="filter" id="jewelery-filter" onclick="activeFilter('jewelery-filter')">Jewelery</div>
+        </div>
+        <section>
+          <div class="items" id="men"><title>Men's Clothing</title></div>
+        </section>
+
+        <section>
+          <div class="items" id="women"><title>Women's Clothing</title></div>
+        </section>
+
+        <section>
+          <div class="items" id="electronics"><title>Electronics</title></div>
+        </section>
+
+        <section>
+          <div class="items" id="jewelery"><title>Jewelery</title></div>
+        </section>
+
+        <section>
+          <div class="items" id="search-results" style="display: none;"><title>Search Results</title></div>
+        </section>
+
+      </main-content>
+
+    </main>
+    
+    <script src="./script.js"></script>
+  </body>
+</html>
