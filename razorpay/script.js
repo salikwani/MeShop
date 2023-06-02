@@ -9,7 +9,7 @@ if(localStorage.getItem('userArray')) {
   const currUser = userArray.findIndex(ele => ele.accessToken);
   if(userArray[currUser].accessToken) {
     if(userArray[currUser].cart && userArray[currUser].cart.length > 0) {
-      const orderTotal = Math.floor(userArray[currUser].amount);
+      const orderTotal = userArray[currUser].amount;
       console.log(userArray[currUser].amount);
       delete userArray[currUser].amount;
       delete userArray[currUser].cart;
