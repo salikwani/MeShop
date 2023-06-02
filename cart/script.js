@@ -17,8 +17,6 @@ if(!localStorage.getItem('userArray')) {
     checkout.addEventListener('click',() => {
         if(addTotal !== 0) {
             userArray[currUser].amount = addTotal;
-            delete userArray[currUser].cart;
-            localStorage.setItem('userArray',JSON.stringify(userArray));
             var link = document.createElement('a');
             link.href = "../razorpay/index.html";
             document.body.appendChild(link);
