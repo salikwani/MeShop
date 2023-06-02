@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Inter", sans-serif;
+  }
+  
+  #header {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 29px;
+    background-color: #000000;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 6rem;
+    color: white;
+  }
+  
+  #header a {
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    color: white;
+  }
+  
+  #header-links {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1.5rem;
+  }
+
+  #my-cart {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 36px;
+    color: #000000;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 2rem 1rem;
+    row-gap: 2rem;
+  }
+
+#my-cart > h1 {
+    width: 100%;
+    text-align: center;
+}
+
+#cart-items {
+    width: 75%;
+}
+
+.items {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 1rem 0;
+    gap: 1rem;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 30%;
+  }
+  
+.item img {
+    max-width: 100%;
+    flex-grow: 1;
+  }
+  
+.row {
+    font-size: 1rem;
+    padding: 0 .5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+
+.row > span:nth-child(1) {
+    width: 70%;
+}
+
+.item button {
+    width: 100%;
+    border-radius: none;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+  }
+
+  #checkout {
+    width: 25%;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 1rem .3rem;
+    gap: 1rem;
+    font-size: 1.5rem;
+    align-self: flex-start;
+    margin: 2rem 0;
+}
+
+#checkout > p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#checkout > button {
+    margin: .5rem;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+sub {
+    font-size: 1rem;
+}
