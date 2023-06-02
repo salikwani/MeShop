@@ -1,5 +1,4 @@
-
-
+location.reload();
 const signupBtn = document.getElementById('signup-btn');
 const loginBtn = document.getElementById('login-btn');
 
