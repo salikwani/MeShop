@@ -6,24 +6,18 @@
 
 if(localStorage.getItem('userArray')) {
   const userArray = JSON.parse(localStorage.getItem('userArray'));
-  console.log(userArray);
   const currUser = userArray.findIndex(ele => ele.accessToken);
-  console.log(currUser);
   if(userArray[currUser].accessToken) {
-    console.log(userArray[currUser].accessToken);
     if(userArray[currUser].cart && userArray[currUser].cart.length > 0) {
-      console.log(userArray[currUser].cart);
-      console.log(userArray[currUser].amount);
-      var orderTotal = userArray[currUser].amount;
-      console.log(orderTotal);
+      const orderTotal = userArray[currUser].amount;
       delete userArray[currUser].amount;
       delete userArray[currUser].cart;
       localStorage.setItem('userArray',JSON.stringify(userArray));
 
       var options = {
         key: "rzp_test_PV1oQ0oMtgXOsq", // Enter the Key ID generated from the Dashboard
-        amount: orderTotal * 100 * 80, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
-        currency: "INR",
+        amount: orderTotal * 100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+        currency: "USD",
         name: "MyShop Checkout",
         description: "This is your order", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
         theme: {
