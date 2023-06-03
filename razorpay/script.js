@@ -6,10 +6,16 @@
 
 if(localStorage.getItem('userArray')) {
   const userArray = JSON.parse(localStorage.getItem('userArray'));
+  console.log(userArray);
   const currUser = userArray.findIndex(ele => ele.accessToken);
+  console.log(currUser);
   if(userArray[currUser].accessToken) {
+    console.log(userArray[currUser].accessToken);
     if(userArray[currUser].cart && userArray[currUser].cart.length > 0) {
-      const orderTotal = userArray[currUser].amount;
+      console.log(userArray[currUser].cart);
+      console.log(userArray[currUser].amount);
+      var orderTotal = userArray[currUser].amount;
+      console.log(orderTotal);
       delete userArray[currUser].amount;
       delete userArray[currUser].cart;
       localStorage.setItem('userArray',JSON.stringify(userArray));
