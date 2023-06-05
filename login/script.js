@@ -12,6 +12,7 @@ form.addEventListener('submit', (e) => {
     var currUser;
     if(userArray.find((user) => { return user.email === email.value && user.password === password.value })) {
         currUser = userArray.findIndex((user) => { return user.email === email.value && user.password === password.value });
+        userArray.forEach((e) => {if(e.accessToken) {delete e.accessToken}});
         userArray[currUser].accessToken = generateToken();
         localStorage.setItem('userArray',JSON.stringify(userArray));
         var link = document.createElement('a');
